@@ -1,0 +1,56 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 6024f0571212805fad0a0e3ea4aa5200ae3863e353fbd5753cc8244cf5530869
+
+name:           servant-pres
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/githubuser/servant-pres#readme
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2017 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+    README.md
+
+library
+  hs-source-dirs:
+      src
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , http-client
+    , http-client-tls
+    , http-types
+    , servant
+    , servant-client
+    , servant-docs
+    , servant-server
+    , text
+    , transformers
+    , wai
+    , warp
+  exposed-modules:
+      Client
+      Types
+      UsersServer
+  other-modules:
+      Paths_servant_pres
+  default-language: Haskell2010
+
+executable servant-pres
+  main-is: Main.hs
+  other-modules:
+      Paths_servant_pres
+  hs-source-dirs:
+      exe
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010

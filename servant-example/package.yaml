@@ -1,0 +1,37 @@
+name:                servant-pres
+version:             0.1.0.0
+homepage:            https://github.com/githubuser/servant-pres#readme
+license:             BSD3
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2017 Author name here
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+  dependencies:
+    - aeson
+    - bytestring
+    - containers
+    - http-client
+    - http-client-tls
+    - http-types
+    - servant
+    - servant-client
+    - servant-docs
+    - servant-server
+    - text
+    - transformers
+    - wai
+    - warp
+    - wai
+
+executables:
+  servant-pres:
+    source-dirs:      exe
+    main:             Main.hs
